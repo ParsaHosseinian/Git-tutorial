@@ -1,2 +1,5 @@
 # Git-tutorial
-All git commands cheatsheet + any tip on how to work with github and gitlab
+
+## ✔️ what exactly is this repo?
+
+- All git commands cheatsheet + any tip on how to work with github and gitlab
