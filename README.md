@@ -6,7 +6,7 @@
 
 ## ✔️ Usefull for Who?
 
-- For anyone who wants git as a control version on their projects with no need to remember its commands because you have access to all of them here 😉
+- For anyone who wants to use git as a control version on their projects with no need to remember its commands because you have access to all of them here 😉
 
 ## ✔️ Author
 
