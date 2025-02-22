@@ -70,8 +70,9 @@ git branch -d branchName  # Delete a branch (only if merged with the remote bran
 
 git branch -D branchName  # Force delete a branch (even if not merged)
 ```
+# General tips
 
-## Show Hidden `.git` Directory in Repository
+## Show Hidden `.git` Directory in Repository on vscode
 1. Press `Ctrl + P` in VS Code.
 2. Type `>settings` and select **Preferences: Open User Settings (JSON)**.
 3. Change the value of `"**/.git"` from `true` to `false`.
