@@ -43,6 +43,8 @@ git diff --staged  # Show changes in staged files
 
 git log  # Show commit history
 
+git log --oneline # Show commit history; summarizes each commit in oneline
+
 git show commit-hash  # Show details of a specific commit
 
 git show HEAD~2  # Show changes made in the commit before last two commits
