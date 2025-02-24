@@ -45,6 +45,18 @@ git log  # Show commit history
 
 git log --oneline # Show commit history; summarizes each commit in oneline
 
+git log --stat # More detailed statistics show total commits.
+
+git log --graph # Graphically displays commit history + branches
+
+git log --graph --oneline # Graphically displays commit history + branches; summarizes each commit in oneline
+
+git log --after="23-10-12" # displays commit history after the date "23-10-12"
+
+git log --before="23-10-12" # displays commit history before the date "23-10-12"
+
+git log --author="Parsa Hosseii" # displays only Parsa Hosseii commit history
+
 git show commit-hash  # Show details of a specific commit
 
 git show HEAD~2  # Show changes made in the commit before last two commits
