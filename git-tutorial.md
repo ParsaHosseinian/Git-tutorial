@@ -18,6 +18,13 @@ git config --global -e  # Open global Git settings in the editor
 git config --global core.autocrlf true  # Set to 'true' for Windows, 'input' for macOS/Linux
 ```
 
+## Rename Git Command Prompts
+```sh
+git config --local alias.your-config-name "the main config name"# Renames git command prompts to your desired name in this project
+# example below:
+git config --local alias.lgo "log --oneline" # now we can simply use `lgo` to call "log --oneline"
+```
+
 ## Initializing a Repository
 ```sh
 git init  # Initialize a Git repository in the current directory
