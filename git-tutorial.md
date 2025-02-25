@@ -23,6 +23,7 @@ git config --global core.autocrlf true  # Set to 'true' for Windows, 'input' for
 git config --local alias.your-config-name "the main config name"# Renames git command prompts to your desired name in this project
 # example below:
 git config --local alias.lgo "log --oneline" # now we can simply use `lgo` to call "log --oneline"
+# to use it globaly, use --global instead of --local
 ```
 
 ## Initializing a Repository
