@@ -1,11 +1,11 @@
 # Git Commands
 
-## Check Git Version
+## ✔️ Check Git Version
 ```sh
 git --version  # Check if Git is installed and display its version
 ```
 
-## Configuration - Identify Yourself
+## ✔️ Configuration - Identify Yourself
 ```sh
 git config --global user.name "yourname"  # Set your name
 
@@ -18,7 +18,7 @@ git config --global -e  # Open global Git settings in the editor
 git config --global core.autocrlf true  # Set to 'true' for Windows, 'input' for macOS/Linux
 ```
 
-## Rename Git Command Prompts
+## ✔️ Rename Git Command Prompts
 ```sh
 git config --local alias.your-config-name "the main config name"# Renames git command prompts to your desired name in this project
 # example below:
@@ -26,12 +26,12 @@ git config --local alias.lgo "log --oneline" # now we can simply use `lgo` to ca
 # to use it globaly, use --global instead of --local
 ```
 
-## Initializing a Repository
+## ✔️ Initializing a Repository
 ```sh
 git init  # Initialize a Git repository in the current directory
 ```
 
-## Workflow
+## ✔️ Workflow
 ```sh
 git status  # Show untracked, staged, and modified files
 
@@ -78,7 +78,7 @@ git checkout commit-hash  # Move to a specific commit
 git checkout master  # Switch back to the latest commit in the master branch
 ```
 
-## Branches
+## ✔️ Branches
 ```sh
 git branch  # List all branches
 
@@ -100,9 +100,66 @@ git branch -m newBranchName # Renames branch currently you are on
 ```
 # General tips
 
-## Show Hidden `.git` Directory in Repository on vscode
+## ✔️ Show Hidden `.git` Directory in Repository on vscode
 1. Press `Ctrl + Shift + P` in VS Code.
 2. Type `>settings` and select **Preferences: Open User Settings (JSON)**.
 3. Change the value of `"**/.git"` from `true` to `false`.
 
 This will make the `.git` folder visible in the file explorer.
+
+---
+---
+
+## ✔️ Install and Use GitLens Extension in VS Code
+
+### 1. Install GitLens Extension
+1. Open **VS Code**.
+2. Press `Ctrl + Shift + X` to open the Extensions Marketplace.
+3. In the search bar, type **GitLens**.
+4. Click on **GitLens — Git supercharged** by **GitKraken**.
+5. Click **Install**.
+
+---
+
+### 2. Enable GitLens Features
+Once installed, GitLens adds various features to your VS Code. Some of the most useful ones include:
+
+- **File Blame:** Shows who last edited each line in a file.
+- **Line History:** Displays commit history for the selected line.
+- **Repository View:** Provides an overview of branches, commits, and remotes.
+
+To enable or customize features:
+1. Press `Ctrl + Shift + P` to open the Command Palette.
+2. Type `GitLens: Settings` and select it.
+3. Adjust the settings based on your preference.
+
+---
+
+### 3. Using GitLens in VS Code
+#### a) View Line Blame
+1. Open a **Git-tracked** file.
+2. Hover over any line to see the **last commit and author** in a tooltip.
+
+#### b) View File History
+1. Right-click on a file in the Explorer panel.
+2. Select **GitLens: Show File History**.
+
+#### c) View Commit Details
+1. Open the **Source Control** sidebar (`Ctrl + Shift + G`).
+2. Click on a commit to see details such as **author, message, and changes**.
+
+---
+
+### 4. Customize GitLens in `settings.json`
+1. Press `Ctrl + Shift + P`.
+2. Type `>settings` and select **Preferences: Open User Settings (JSON)**.
+3. Add or modify the following settings:
+
+```json
+{
+  "gitlens.currentLine.enabled": true,
+  "gitlens.hovers.enabled": true,
+  "gitlens.codeLens.enabled": true,
+  "gitlens.views.repositories.enabled": true
+}
+
