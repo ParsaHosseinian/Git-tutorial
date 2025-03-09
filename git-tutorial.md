@@ -90,7 +90,7 @@ git switch branchName # switch to branchName
 
 git switch -c branchName # first creates branchName and then switch to it
 
-git merge branchName  # Merge changes from another branch into the current branch
+git merge branchName  # Merge changes from another branch into the current branch (fast forward)
 
 git branch -d branchName  # Delete a branch (only if merged with the remote branch)
 
