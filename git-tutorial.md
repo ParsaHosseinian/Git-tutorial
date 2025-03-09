@@ -95,6 +95,8 @@ git merge branchName  # Merge changes from another branch into the current branc
 git branch -d branchName  # Delete a branch (only if merged with the remote branch)
 
 git branch -D branchName  # Force delete a branch (even if not merged)
+
+git branch -m newBranchName # Renames branch currently you are on
 ```
 # General tips
 
