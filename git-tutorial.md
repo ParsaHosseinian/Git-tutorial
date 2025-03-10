@@ -92,6 +92,9 @@ git switch -c branchName # first creates branchName and then switch to it
 
 git merge branchName  # Merge changes from another branch into the current branch (fast forward)
 
+git merge branchName  # besides git asks to give it a merged commit message because it's non fast forward merging (if there is no conflict)
+# if there is conflict in merging first git askes you to fix the conflict and then give it a merge commit message to finish merging. 
+
 git branch -d branchName  # Delete a branch (only if merged with the remote branch)
 
 git branch -D branchName  # Force delete a branch (even if not merged)
