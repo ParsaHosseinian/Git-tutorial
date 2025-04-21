@@ -45,9 +45,11 @@ git rm filename  # Remove a file from directory and staging area
 
 git mv oldFilename newFilename  # Rename a file
 
-git diff  # Show changes in files
+git diff  # Show changes between staged and working directory files
 
-git diff --staged  # Show changes in staged files
+git diff --staged  # Show changes between stage files and the last commit
+
+git diff head  # Show changes between working directory files and the last commit
 
 git log  # Show commit history
 
